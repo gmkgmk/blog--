@@ -15,9 +15,10 @@
 <meta property="og:url" content="http://www.gmkgmk.com/2018/01/12/小程序学习/index.html">
 <meta property="og:site_name" content="GoogWin的博客">
 <meta property="og:description" content="小程序一.录音相关wx.getRecorderManager() 全局唯一的录音管理器 四个方法:start(参数:options),pause,resume,stop; 三个监听方法:onStart,onPause,onStop; –(参数:callback) 其他事件:onFrameRecorded,onError; –(参数:callback)">
+<meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.gmkgmk.com/images/wx/recorder_1.png">
 <meta property="og:image" content="http://www.gmkgmk.com/images/wx/recorder_2.png">
-<meta property="og:updated_time" content="2018-03-14T03:06:14.436Z">
+<meta property="og:updated_time" content="2018-06-11T09:12:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序学习">
 <meta name="twitter:description" content="小程序一.录音相关wx.getRecorderManager() 全局唯一的录音管理器 四个方法:start(参数:options),pause,resume,stop; 三个监听方法:onStart,onPause,onStop; –(参数:callback) 其他事件:onFrameRecorded,onError; –(参数:callback)">
@@ -210,7 +211,7 @@
 <h3 id="2-下载文件"><a href="#2-下载文件" class="headerlink" title="2. 下载文件"></a>2. 下载文件</h3><p>wx.downloadFile(OBJECT)</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">downFile() &#123;</span><br><span class="line">  <span class="keyword">const</span> &#123; url &#125; = <span class="keyword">this</span>.data;</span><br><span class="line">  wx.downloadFile(&#123;</span><br><span class="line">    url: url + <span class="string">"/test.jpg"</span>,</span><br><span class="line">    success: <span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(res);</span><br><span class="line">      <span class="comment">// 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容</span></span><br><span class="line">      <span class="keyword">if</span> (res.statusCode === <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">          src: res.tempFilePath</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="3-注意"><a href="#3-注意" class="headerlink" title="3.注意"></a>3.注意</h3><p>1.uploadFile、downloadFile 的最大并发限制是 10 个;</p>
-<p>2.网络请求的 referer header 不可设置。其格式固定为 <a href="https://servicewechat.com/{appid}/{version}/page-frame.html，其中" target="_blank" rel="external">https://servicewechat.com/{appid}/{version}/page-frame.html，其中</a> {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本。</p>
+<p>2.网络请求的 referer header 不可设置。其格式固定为 <a href="https://servicewechat.com/{appid}/{version}/page-frame.html，其中" target="_blank" rel="noopener">https://servicewechat.com/{appid}/{version}/page-frame.html，其中</a> {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本。</p>
 <p>3.只要成功接收到服务器返回，无论 statusCode 是多少，都会进入 success 回调。请开发者根据业务逻辑对返回值进行判断。</p>
 
       
@@ -304,11 +305,6 @@
       </div>
     </a>
   
-  
-    <a href="/2017/12/26/react-服务端渲染(二)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">react服务端同构渲染-(使用redux搭建)</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
@@ -449,15 +445,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Parcel 打包 踩坑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">js git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">react antd js</a>
+                <a href="javascript:void(0)" class="js-tag color4">electron</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -465,15 +453,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">electron</a>
+                <a href="javascript:void(0)" class="js-tag color3">Parcel 打包 踩坑</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+                <a href="javascript:void(0)" class="js-tag color4">react antd js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">react ssr</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -482,10 +474,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">koa koa-compose</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">promise js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -498,6 +486,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">react</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">js git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">promise js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JS array</a>
               </li>
             
             <div class="clearfix"></div>

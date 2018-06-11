@@ -15,6 +15,7 @@
 <meta property="og:url" content="http://www.gmkgmk.com/page/3/index.html">
 <meta property="og:site_name" content="GoogWin的博客">
 <meta property="og:description" content="才入行的小前端,写写工作记录.">
+<meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GoogWin的博客">
 <meta name="twitter:description" content="才入行的小前端,写写工作记录.">
@@ -153,31 +154,30 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-antd使用babel-import-plugin问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-深入浅出React和Redux学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/22/antd使用babel-import-plugin问题/">过去杂写整理:使用antd时使用babel-import-plugin的坑</a>
+      <a class="article-title" href="/2018/04/13/深入浅出React和Redux学习笔记/">暂未整理,只做备份(深入浅出React和Redux学习笔记)</a>
     </h1>
   
 
         
-        <a href="/2017/11/22/antd使用babel-import-plugin问题/" class="archive-article-date">
-  	<time datetime="2017-11-22T01:29:09.015Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-22</time>
+        <a href="/2018/04/13/深入浅出React和Redux学习笔记/" class="archive-article-date">
+  	<time datetime="2018-04-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="在最近的项目中遇到的问题"><a href="#在最近的项目中遇到的问题" class="headerlink" title="在最近的项目中遇到的问题"></a>在最近的项目中遇到的问题</h2><ol>
-<li>引用 babel-import-plugin 报错 “You may need an appropriate loader to handle<br>this file type.”_ webpack 配置如下 :</li>
-</ol>
+        <p>connet函数的作用<br>connet作为容器组件:<br>1,把store上的状态转化为内层傻瓜组件的props,<br>2.把内层傻瓜组件中的用户动作转化为派送给Store的动作<br>一个是内层傻瓜对象的输入,一个是内层傻瓜对象的输出.<br>这两个工作的套路也很明显,吧Store上的状态转化为内层组件的props,其实就是一个映关系,去掉框架,最后就是一个mapStateToProps函数该做的事情,</p>
+<p>mapStateToProps和mapDispatchToProps都可以包含第二个参数,代表ownProps,也就是直接传递给外层容器组件的props<br>
         
-          <a class="article-more-a" href="/2017/11/22/antd使用babel-import-plugin问题/#more">more >></a>
+          <a class="article-more-a" href="/2018/04/13/深入浅出React和Redux学习笔记/#more">more >></a>
         
       
 
@@ -191,7 +191,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">react antd js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
         		</li>
       		
 		</ul>
@@ -201,7 +201,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/22/antd使用babel-import-plugin问题/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/04/13/深入浅出React和Redux学习笔记/">展开全文 >></a>
         </p>
       
 
@@ -231,30 +231,112 @@
 
 
   
-    <article id="post-浏览器加载过程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-学习源码之promise" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/21/浏览器加载过程/">过去杂写整理:浏览器加载理解:从按下enter到页面渲染</a>
+      <a class="article-title" href="/2018/03/09/学习源码之promise/">学习源码之promise</a>
     </h1>
   
 
         
-        <a href="/2017/11/21/浏览器加载过程/" class="archive-article-date">
-  	<time datetime="2017-11-21T14:31:42.125Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-21</time>
+        <a href="/2018/03/09/学习源码之promise/" class="archive-article-date">
+  	<time datetime="2018-03-09T14:41:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="浏览器加载理解"><a href="#浏览器加载理解" class="headerlink" title="浏览器加载理解"></a>浏览器加载理解</h2><blockquote>
-<h2 id="关于浏览器按下-enter-到-html-生成发生了什么-网上博文和自己的一些理解-做一个积累"><a href="#关于浏览器按下-enter-到-html-生成发生了什么-网上博文和自己的一些理解-做一个积累" class="headerlink" title="关于浏览器按下 enter 到 html 生成发生了什么 , 网上博文和自己的一些理解 , 做一个积累"></a>关于浏览器按下 enter 到 html 生成发生了什么 , 网上博文和自己的一些理解 , 做一个积累</h2></blockquote>
+        <h1 id="学习源码之promise"><a href="#学习源码之promise" class="headerlink" title="学习源码之promise;"></a>学习源码之promise;</h1><p>promise代码库应该是目前为止能看懂的很简单的库,但是确是我们日常开发中经常使用到的.</p>
+<p>我们使用promise时常常会这样使用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> promise_test = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  setTimeout(</span><br><span class="line">    () =&gt; &#123;</span><br><span class="line">      resolve(<span class="string">"hello"</span>)</span><br><span class="line">    &#125;, <span class="number">1000</span></span><br><span class="line">  )</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">promise_test.then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res)</span><br><span class="line">  <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">&#125;).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res)</span><br><span class="line">  <span class="keyword">return</span> <span class="number">2</span></span><br><span class="line">&#125;).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res)</span><br><span class="line">  <span class="keyword">return</span> <span class="number">3</span></span><br><span class="line">&#125;).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res)</span><br><span class="line">  <span class="keyword">return</span> <span class="number">4</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/11/21/浏览器加载过程/#more">more >></a>
+          <a class="article-more-a" href="/2018/03/09/学习源码之promise/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">promise js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/09/学习源码之promise/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-查漏补缺之JSON字符串化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/09/查漏补缺之JSON字符串化/">查漏补缺之JSON字符串化</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/09/查漏补缺之JSON字符串化/" class="archive-article-date">
+  	<time datetime="2018-03-09T14:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="查漏补缺之JSON字符串化"><a href="#查漏补缺之JSON字符串化" class="headerlink" title="查漏补缺之JSON字符串化"></a>查漏补缺之JSON字符串化</h1><h2 id="JSON的转化"><a href="#JSON的转化" class="headerlink" title="JSON的转化"></a>JSON的转化</h2><p>通常,我们将一个JSON转换为字符串的时候,会用到 JSON.stringify的方法;</p>
+<p>对于大多数值来说,用 JSON.stringify和toString()并没有什么差别;</p>
+<p>所有安全的值都可以被这个方法转化为字符串(安全得值是指JSON值能够呈现为有效的JSON各式的值)</p>
+<p>不安全得值大概包括:undefined,function,symbol,包含循环引用;都无法通过这个函数处理;</p>
+<p>当要对这些值进行处理的时候,就可以在对象中定义名为toJSON()的方法来返回一个安全的JSON值;</p>
+<p><em>toJSON能够’返回一个能够被字符串化的安全的JSON值’</em><br>
+        
+          <a class="article-more-a" href="/2018/03/09/查漏补缺之JSON字符串化/#more">more >></a>
         
       
 
@@ -278,7 +360,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/21/浏览器加载过程/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/03/09/查漏补缺之JSON字符串化/">展开全文 >></a>
         </p>
       
 
@@ -308,31 +390,33 @@
 
 
   
-    <article id="post-执行上下文" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-小程序学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/21/执行上下文/">过去杂写整理:执行上下文理解</a>
+      <a class="article-title" href="/2018/01/12/小程序学习/">小程序学习</a>
     </h1>
   
 
         
-        <a href="/2017/11/21/执行上下文/" class="archive-article-date">
-  	<time datetime="2017-11-21T14:25:32.336Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-21</time>
+        <a href="/2018/01/12/小程序学习/" class="archive-article-date">
+  	<time datetime="2018-01-12T02:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="今天拜读了一篇博文-感觉又突破了-对堆栈和上下文又有了一个新的认识"><a href="#今天拜读了一篇博文-感觉又突破了-对堆栈和上下文又有了一个新的认识" class="headerlink" title="今天拜读了一篇博文 , 感觉又突破了 , 对堆栈和上下文又有了一个新的认识"></a>今天拜读了一篇博文 , 感觉又突破了 , 对堆栈和上下文又有了一个新的认识</h2><h2 id="堆和栈的梳理"><a href="#堆和栈的梳理" class="headerlink" title="堆和栈的梳理"></a>堆和栈的梳理</h2><p>以前只知道堆和栈是 js 处理内存的方法 . 栈是先进后出 frist in last out , 后进先出<br>last in frist out!</p>
-<p><strong>堆就感觉是把书放在一个书架上面 , 你只需要知道它名字 , 就可以找到他 .</strong></p>
-<p><strong>栈就感觉把书放一个大小刚好的箱子里 , 你想要下面的就必须要把上面的拿出来 ;</strong></p>
+        <h1 id="小程序"><a href="#小程序" class="headerlink" title="小程序"></a>小程序</h1><h2 id="一-录音相关"><a href="#一-录音相关" class="headerlink" title="一.录音相关"></a>一.录音相关</h2><p>wx.getRecorderManager()</p>
+<p><strong>全局唯一</strong>的录音管理器</p>
+<p>四个方法:start(参数:options),pause,resume,stop;</p>
+<p>三个监听方法:onStart,onPause,onStop; –(参数:callback)</p>
+<p>其他事件:onFrameRecorded,onError; –(参数:callback)<br>
         
-          <a class="article-more-a" href="/2017/11/21/执行上下文/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/12/小程序学习/#more">more >></a>
         
       
 
@@ -346,7 +430,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">js context 原理</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">react antd js</a>
         		</li>
       		
 		</ul>
@@ -356,7 +440,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/21/执行上下文/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/12/小程序学习/">展开全文 >></a>
         </p>
       
 
@@ -500,15 +584,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Parcel 打包 踩坑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">js git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">react antd js</a>
+                <a href="javascript:void(0)" class="js-tag color4">electron</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -516,15 +592,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">electron</a>
+                <a href="javascript:void(0)" class="js-tag color3">Parcel 打包 踩坑</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+                <a href="javascript:void(0)" class="js-tag color4">react antd js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">react ssr</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -533,10 +613,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">koa koa-compose</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">promise js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -549,6 +625,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">react</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">js git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">promise js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JS array</a>
               </li>
             
             <div class="clearfix"></div>
